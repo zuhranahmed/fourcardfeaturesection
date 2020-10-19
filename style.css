@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0 15px;
+  line-height: 1.4;
+  background-color: hsl(0, 27%, 98%);
+}
+
+.main-container {
+  min-height: 100vh;
+  max-height: 1280px;
+  margin: 25px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+  line-height: 1;
+  margin-bottom: 35px;
+}
+
+.heading-1 {
+  font-weight: 200;
+  margin-bottom: 17.5px;
+}
+
+.heading-2 {
+  font-weight: 600;
+  margin-bottom: 22.5px;
+}
+
+.details {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.65px;
+  color: hsl(229, 6%, 66%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, fr);
+  gap: 25px;
+  margin-bottom: 75px;
+}
+
+.card {
+  padding: 25px;
+  background-color: #fff;
+  max-width: 24rem;
+  max-height: 24rem;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 9;
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card-3 {
+  grid-column: 2 / 3;
+  grid-row: 6/ 11;
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card-4 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 9;
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.card p {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 45px;
+}
+
+.card-icon {
+  align-self: flex-end;
+}
+
+footer p {
+  color: hsl(229, 6%, 66%);
+  margin: 5px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-decoration: none;
+}
+
+.author {
+  border-bottom: 1px dotted hsl(234, 12%, 34%);
+  transition: all 0.2s ease-in;
+}
+
+.author:hover {
+  color: hsl(227, 4%, 59%);
+  border-bottom: 1px dottedhsl(227, 4%, 59%);
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    min-height: 100vh;
+    max-height: 1280px;
+    margin: 20px auto;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .card-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .card-3 {
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+  }
+  .card-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  header {
+    margin-bottom: 25px;
+  }
+
+  .heading-1 {
+    margin-bottom: 12.5px;
+  }
+
+  .heading-2 {
+    margin-bottom: 17.5px;
+  }
+
+  .details {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 45px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .card-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .card-3 {
+    grid-column: 1 / 2;
+    grid-row: 3/ 4;
+  }
+  .card-4 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .card h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .card p {
+    margin-bottom: 35px;
+  }
+}
